@@ -1,0 +1,77 @@
+<section>
+    <div class="lg-12">
+        <div class="display container-site content-between">
+
+            <div class="display">
+                <a href="" class="display">
+                    <mat-icon> headset_mic</mat-icon>
+                    <h2>Need Help? Call us
+                        <span>123 456 7890</span>
+                    </h2>
+                </a>
+
+                <a href="" class="contact-nav display">
+                    <mat-icon> alternate_email</mat-icon>
+                    <h2>Contact for more info:
+                        <span>info&#64;rightnehindme.com</span>
+                    </h2>
+                </a>
+            </div>
+
+            <div class="social-links display content-between">
+
+                <div *ngFor="let item of socialLinks">
+                    <a [href]="item.url" class="">
+                        <img [src]="item.imageUrl" class="link-img" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <nav>
+        <div class="lg-12">
+            <div class="display">
+                <div class="nav-logo">
+                    <img src="../../assets/img/nav-logo.png" alt="" class="logo-img">
+                </div>
+                <div class="nav-items">
+                    <ul class="display content-between">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">buy</a>
+                        </li>
+                        <li>
+                            <a href="">Sell</a>
+                        </li>
+                        <li>
+                            <a href="">Rent</a>
+                        </li>
+                        <li>
+                            <a href="">property trend</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-btns">
+                    <button mat-stroked-button class="login-btn">
+                        <mat-icon>person</mat-icon>
+                        Login
+                    </button>
+                    <button mat-stroked-button class="submit-btn">Submit A Deal</button>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
